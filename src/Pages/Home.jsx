@@ -11,7 +11,6 @@ const Home = () => {
         { id: 1, title: "john-wick", release_date: "2020" },
         { id: 2, title: "deadpool", release_date: "2022" },
         { id: 3, title: "batman", release_date: "2024" },
-        { id: 4, title: "xmen", release_date: "2027" },
     ]
     return (
         <div className='home'>
