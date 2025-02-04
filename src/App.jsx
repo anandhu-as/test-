@@ -1,11 +1,19 @@
 import React from 'react'
 import Home from './Pages/Home'
-
+import { Route, Routes } from 'react-router-dom'
+import Favorites from './Pages/Favorites'
+import NavBar from './Components/NavBar'
 const App = () => {
   return (
-    <div>
-<Home/>   
-    </div>
+   <div>
+    <NavBar/>
+     <main className="main-content">
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/favorites' element={<Favorites />} />
+      </Routes>
+    </main>
+   </div>
   )
 }
 
